@@ -13,8 +13,8 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     overflow: hidden;
-    overflow-y: auto;
-    overflow-x: auto;
+    overflow-y: scroll;
+    overflow-x: scroll;
 }
 
 .container {
@@ -105,12 +105,13 @@ h1:hover {
     z-index: 100;
 }
 
-.logo {
+.logo1 .logo{
     font-size: 35px;
     color: white;
     text-decoration: none;
     font-weight: 700;
     position: relative;
+    left: 150px;
 }
 
 .n1 a {
@@ -486,14 +487,20 @@ nav ul li {
 
 /* Responseve For Phones */
 
-@media only screen and (max-width:600px) {
-    .logo1 {
+@media (min-width:300px) and (max-width:800px) {
+    .logo1 a{
         position: relative;
         right: 100px;
+        font-size: 20px;
+    }
+
+    .logo1 a span{
+        position: relative;
+        bottom: 5px;
     }
 
     .b1 {
-        font-size: 25px;
+        font-size: 23px;
         position: relative;
         right: 20px;
     }
@@ -525,32 +532,22 @@ nav ul li {
     }
 
     .socbtn1{
-        width: 100px;
+        width: 180px;
+        position: relative;
+        left: 362px;
+        top: 120px;
     }
 }
 
 /* Responseve For Desktop */
 
-@media only screen and (min-width: 900px) {
-    .logo1 {
+@media (min-width:850px) and (max-width:4000px){
+    .logo1 a img,span{
         position: relative;
-        left: 195px;
-    }
-
-    .hr5{
-        position: relative;
-        left: 350px;
-    }
-
-
-    .b1 {
-        position: relative;
-        font-size: 35px;
-        font-weight: 800;
-    }
-    
-    .btns{
-        width: auto;
-        justify-content: center;
+        left: 200px;
     }
 }
+
+
+
+
