@@ -105,13 +105,13 @@ h1:hover {
     z-index: 100;
 }
 
-.logo1 .logo{
+.logo{
     font-size: 35px;
     color: white;
     text-decoration: none;
     font-weight: 700;
     position: relative;
-    left: 150px;
+    left: 300px;
 }
 
 .n1 a {
@@ -487,66 +487,116 @@ nav ul li {
 
 /* Responseve For Phones */
 
-@media (min-width:300px) and (max-width:800px) {
-    .logo1 a{
-        position: relative;
-        right: 100px;
-        font-size: 20px;
+@media only screen and (max-width: 767px) {
+    body{
+        overflow-x: scroll;
+        scroll-behavior: smooth;
     }
 
-    .logo1 a span{
+    .logo{
         position: relative;
-        bottom: 5px;
+        left: 0px;
     }
 
-    .b1 {
-        font-size: 23px;
+    .logo span{
+        font-size: 17px;
         position: relative;
-        right: 20px;
+        bottom: 6px;
     }
 
-    .hr5 {
+    .b1{
         position: relative;
-        left: 80px;
+        font-size: 14px;
+        right: 0px;
     }
 
-    .btns{
-        width: 550px;
+    .hr5{
+        width: 250px;
+        left: 40px;
+    }
+
+    .hr55{
+        width: 320px;
+        right: 210px;
+    }
+
+    .socbtn{
         display: flex;
-        position: relative;
-        left: 20px;
+        text-decoration: none;
+        width: 200px;
+        right: 200px;
+    }
+
+    .btns > a{
+        text-decoration: none;
     }
 
     .box5{
-        width: 580px;
-        height: 300px;
-        position: relative;
-        right: 225px;
+        width: 300px;
+        height: 200px;
+        right: 200px;
     }
 
-    .photo img{
-        width: 100px;
-        height: 100px;
-        position: relative;
-        left: 465px;
+    .images123{
+        display: none;
+    }
+
+    .hrp{
+        margin-bottom: 0px;
+    }
+
+    .details1{
+        font-size: 10px;
+        top: 5px;
+    }
+
+    .images123{
+        right: 100px;
     }
 
     .socbtn1{
-        width: 180px;
+        left: 300px;
+    }
+
+    .ico{
         position: relative;
-        left: 362px;
-        top: 120px;
+        top: -20px;
+        width: 50px;
+        height: 50px;
+        top: 145px;
+    }
+
+    .ico > img{
+        width: 50px;
+        height: 50px;
+        top: 20px;
+    }
+
+    .txt-ico{
+        position: relative;
+        top: 12px;
+    }
+
+    .socbtn1{
+        position: relative;
+        width: 200px;
+        top: 160px;
+        left: 60px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1000px){
+    body {
+        overflow: scroll;
+    }
+
+    .logo{
+        position: relative;
+        left: 100px;
     }
 }
 
-/* Responseve For Desktop */
-
-@media (min-width:850px) and (max-width:4000px){
-    .logo1 a img,span{
-        position: relative;
-        left: 200px;
-    }
-}
 
 
 
